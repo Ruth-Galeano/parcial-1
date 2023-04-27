@@ -44,10 +44,10 @@ namespace Parcial1.Services
 
         private bool validarDatosCiudad(CiudadModel ciudad)
         {
-            //if (persona.Nombre.Trim().Length < 2)
-            //{
-            //    return false;
-            //}
+            if (ciudad.Ciudad.Trim().Length < 2)
+            {
+                return false;
+            }
 
             return true;
         }

@@ -44,10 +44,15 @@ namespace Parcial1.Services
 
         private bool validarDatosCliente(ClienteModel cliente)
         {
-            //if (persona.Nombre.Trim().Length < 2)
-            //{
-            //    return false;
-            //}
+            if (cliente.Nombres.Trim().Length < 2)
+            {
+                return false;
+            }
+
+            if (cliente.Apellidos.Trim().Length < 2)
+            {
+                return false;
+            }
 
             return true;
         }
